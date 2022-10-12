@@ -8,6 +8,7 @@
     <Copyright>Copyright © 2022 Alin Andersen</Copyright>
     <PackageTags>alinspace; alin; space; dev; devs; development,</PackageTags>
     <RepositoryUrl>https://github.com/onixion/AlinSpace.Development</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Include="README.md" Pack="True" PackagePath="\" />
