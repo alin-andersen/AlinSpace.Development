@@ -1,0 +1,17 @@
+{
+  "PathToSolutionFile": "AlinSpace.Development.sln",
+  "PathToLocalNugetFolder": "C:\\AlinSpace\\Nuget",
+  "PathToDebugFiles": "C:\\AlinSpace\\Pdbs",
+  "BuildInDebugConfiguration": true,
+  "Author": "Alin Andersen",
+  "Copyright": "Copyright © 2022 Alin Andersen",
+  "RepositoryUrl": "https://github.com/onixion/AlinSpace.Development",
+  "ProjectUrl": "https://github.com/onixion/AlinSpace.Development",
+  "Tags": "alinspace; alin; space; dev; devs; development;",
+  "Projects": [
+    {
+      "Name": "AlinSpace.Development",
+      "Tags": ""
+    }
+  ]
+}

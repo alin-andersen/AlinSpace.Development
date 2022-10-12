@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright © 2022 Alin Andersen</Copyright>
+    <PackageTags>alinspace; alin; space; dev; devs; development,</PackageTags>
+    <RepositoryUrl>https://github.com/onixion/AlinSpace.Development</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="README.md" Pack="True" PackagePath="\" />
+    <None Include="Icon.png" Pack="True" PackagePath="\" />
+  </ItemGroup>
+</Project>
