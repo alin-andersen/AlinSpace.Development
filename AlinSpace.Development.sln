@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development", "Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlinSpace.Development.Tests", "AlinSpace.Development.Tests\AlinSpace.Development.Tests.csproj", "{E15E92FB-9DB3-4954-97B7-3161530A2B47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlinSpace.Development.Console", "AlinSpace.Development.Console\AlinSpace.Development.Console.csproj", "{A2FF583A-049C-44A7-9254-CC582E713FEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E15E92FB-9DB3-4954-97B7-3161530A2B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E15E92FB-9DB3-4954-97B7-3161530A2B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E15E92FB-9DB3-4954-97B7-3161530A2B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
