@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --no-restore -c Release
        
     - name: Tests
-      run: dotnet tests AlinSpace.Development.Tests/AlinSpace.Development.Tests.csproj
+      run: dotnet test AlinSpace.Development.Tests/AlinSpace.Development.Tests.csproj
 
     - name: Package
       run: dotnet pack -c Release -o . AlinSpace.Development/AlinSpace.Development.csproj
