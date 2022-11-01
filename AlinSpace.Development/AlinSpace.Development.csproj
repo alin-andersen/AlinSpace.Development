@@ -16,6 +16,6 @@
     <None Include="Icon.png" Pack="True" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AlinSpace" Version="6.0.1" />
+    <PackageReference Include="AlinSpace" Version="6.0.10" />
   </ItemGroup>
 </Project>
