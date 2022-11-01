@@ -5,9 +5,11 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development", "AlinSpace.Development\AlinSpace.Development.csproj", "{BDDE099D-3BC8-428C-A7A4-157B55CF14A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlinSpace.Development.Tests", "AlinSpace.Development.Tests\AlinSpace.Development.Tests.csproj", "{E15E92FB-9DB3-4954-97B7-3161530A2B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development.Tests", "AlinSpace.Development.Tests\AlinSpace.Development.Tests.csproj", "{E15E92FB-9DB3-4954-97B7-3161530A2B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlinSpace.Development.Console", "AlinSpace.Development.Console\AlinSpace.Development.Console.csproj", "{A2FF583A-049C-44A7-9254-CC582E713FEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development.Console", "AlinSpace.Development.Console\AlinSpace.Development.Console.csproj", "{A2FF583A-049C-44A7-9254-CC582E713FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlinSpace.Development.Maui", "AlinSpace.Development.Maui\AlinSpace.Development.Maui.csproj", "{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,12 @@ Global
 		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2FF583A-049C-44A7-9254-CC582E713FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EA97EF-1D2B-468F-9DDB-BA75F66EF194}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
