@@ -1,5 +1,4 @@
 ﻿using Serilog;
-using System.Diagnostics;
 
 namespace AlinSpace.Development.Build
 {
@@ -83,13 +82,11 @@ namespace AlinSpace.Development.Build
 
             logger.Debug($"Building project {{ProjectName}} ...", project.Name);
 
-            var process = Process.Start("dotnet", $"build {project.PathToProjectFile} -c Release");
-            await process.WaitForExitAsync();
+            await Cli.CommandLineInterface.ExecuteAsync($"dotnet build {project.PathToProjectFile} -c Release");
 
             logger.Debug($"Packing project {{ProjectName}} ...", project.Name);
 
-            process = Process.Start("dotnet", $"pack {project.PathToProjectFile} -c Release");
-            await process.WaitForExitAsync();
+            await Cli.CommandLineInterface.ExecuteAsync($"dotnet pack {project.PathToProjectFile} -c Release");
         }
 
         private async Task CopyNupkgFileAsync(IProject project, Configuration.Configuration configuration)
