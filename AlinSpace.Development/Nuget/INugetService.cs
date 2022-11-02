@@ -1,9 +1,9 @@
-﻿namespace AlinSpace.Development
+﻿namespace AlinSpace.Development.Nuget
 {
     /// <summary>
     /// Represents the nuget service.
     /// </summary>
-    public interface INuget
+    public interface INugetService
     {
         /// <summary>
         /// Cleans the nuget cache asynchronously.

@@ -1,9 +1,9 @@
-﻿namespace AlinSpace.Development
+﻿namespace AlinSpace.Development.Files
 {
     /// <summary>
-    /// Represents the bin-and-obj folder deletion.
+    /// Represents the files service.
     /// </summary>
-    public interface IFilesystemCleanup
+    public interface IFilesService
     {
         /// <summary>
         /// Deletes folder names recursively.
@@ -18,5 +18,11 @@
         /// <param name="path">Path.</param>
         /// <param name="folderNames">Folder names to delete.</param>
         void DeleteFolderNamesRecursively(string path, params string[] folderNames);
+
+        /// <summary>
+        /// Deletes the bin and obj folders recurively.
+        /// </summary>
+        /// <param name="path">Path.</param>
+        void DeleteFolderBinAndObjRecursively(string path);
     }
 }

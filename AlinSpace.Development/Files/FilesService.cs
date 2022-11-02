@@ -1,8 +1,15 @@
-﻿namespace AlinSpace.Development
+﻿using Serilog;
+
+namespace AlinSpace.Development.Files
 {
-    public class FilesystemCleanup : IFilesystemCleanup
+    public class FilesService : IFilesService
     {
-        public static FilesystemCleanup Instance { get; } = new FilesystemCleanup();
+        private readonly ILogger logger;
+
+        public FilesService(ILogger logger)
+        {
+            this.logger = logger;
+        }
 
         public void DeleteFolderNamesRecursively(string path, IEnumerable<string> folderNames)
         {
@@ -66,6 +73,11 @@
             }
 
             return foldersToDelete;
+        }
+
+        public void DeleteFolderBinAndObjRecursively(string path)
+        {
+            DeleteFolderNamesRecursively(path, "bin", "obj");
         }
     }
 }

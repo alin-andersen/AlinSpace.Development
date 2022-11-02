@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AlinSpace.Development.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "build"
+    }
+  }
+}
