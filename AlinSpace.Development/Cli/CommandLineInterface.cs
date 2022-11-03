@@ -2,19 +2,26 @@
 
 namespace AlinSpace.Development.Cli
 {
+    /// <summary>
+    /// Represents the command line interface.
+    /// </summary>
     public static class CommandLineInterface
     {
+        /// <summary>
+        /// Execute asynchronously.
+        /// </summary>
+        /// <param name="command">Command.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
         public static async Task ExecuteAsync(string command, CancellationToken cancellationToken = default)
         {
             if (string.IsNullOrWhiteSpace(command))
                 throw new Exception();
 
-            var command2 = command.Split(" ").FirstOrDefault();
-            var parameters = command.Substring(command2.Length);
+            var executable = command.Split(" ").FirstOrDefault();
+            var parameters = command.Substring(executable.Length);
 
-            var processStartInfo = new ProcessStartInfo(command2, parameters)
+            var processStartInfo = new ProcessStartInfo(executable, parameters)
             {
-                
             };
 
             var process = Process.Start(processStartInfo);

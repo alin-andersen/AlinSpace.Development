@@ -2,17 +2,31 @@
 
 namespace AlinSpace.Development.Build
 {
+    /// <summary>
+    /// Represents the build graph.
+    /// </summary>
     public class BuildGraph
     {
         private ILogger logger;
         private ISolution solution;
 
+        private readonly IDictionary<string, BuildGraphNode> map = new Dictionary<string, BuildGraphNode>();
+
+        /// <summary>
+        /// Connstructor.
+        /// </summary>
         private BuildGraph(ILogger logger, ISolution solution) 
         {
             this.logger = logger;
             this.solution = solution;
         }
 
+        /// <summary>
+        /// Creates new build graph asynchronously.
+        /// </summary>
+        /// <param name="logger">Logger.</param>
+        /// <param name="solution">Solution.</param>
+        /// <returns>Build graph.</returns>
         public static async Task<BuildGraph> NewAsync(ILogger logger, ISolution solution)
         {
             var buildGraph = new BuildGraph(logger, solution);
@@ -22,8 +36,6 @@ namespace AlinSpace.Development.Build
             return buildGraph;
         }
 
-        private readonly IDictionary<string, BuildGraphNode> map = new Dictionary<string, BuildGraphNode>();
-
         Task SetupAsync()
         {
             var projects = solution.Projects.Select(x => Project.Open(x.PathToProjectFile)).ToList();
@@ -32,10 +44,7 @@ namespace AlinSpace.Development.Build
 
             foreach (var project in projects)
             {
-                var buildGraphNode = new BuildGraphNode()
-                {
-                    Project = project,
-                };
+                var buildGraphNode = BuildGraphNode.New(project);
 
                 map.Add(project.Name, buildGraphNode);
 
@@ -90,10 +99,7 @@ namespace AlinSpace.Development.Build
 
                 if (unbuildDependencies.Empty())
                 {
-                    logger.Information($"Building project {{ProjectName}} ...", node.Project.Name);
-
                     await buildAction(node.Project, node.Dependencies.Select(x => x.Project).ToList());
-
                     node.Builded = true;
                 }
                 else
