@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development", "AlinSpace.Development\AlinSpace.Development.csproj", "{BDDE099D-3BC8-428C-A7A4-157B55CF14A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development.Tests", "AlinSpace.Development.Tests\AlinSpace.Development.Tests.csproj", "{E15E92FB-9DB3-4954-97B7-3161530A2B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development.UnitTests", "AlinSpace.Development.UnitTests\AlinSpace.Development.UnitTests.csproj", "{E15E92FB-9DB3-4954-97B7-3161530A2B47}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlinSpace.Development.Console", "AlinSpace.Development.Console\AlinSpace.Development.Console.csproj", "{A2FF583A-049C-44A7-9254-CC582E713FEA}"
 EndProject
