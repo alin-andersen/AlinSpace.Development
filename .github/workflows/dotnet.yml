@@ -23,13 +23,13 @@ jobs:
       run: dotnet restore
       
     - name: Build
-      run: dotnet build --no-restore -c Release
+      run: dotnet build -c Release --no-restore
        
-    - name: Tests
-      run: dotnet test AlinSpace.Development.Tests/AlinSpace.Development.Tests.csproj
+    - name: Test
+      run: dotnet test AlinSpace.Development.UnitTests/AlinSpace.Development.UnitTests.csproj
 
     - name: Package
-      run: dotnet pack -c Release -o . AlinSpace.Development/AlinSpace.Development.csproj --no-build
+      run: dotnet pack AlinSpace.Development/AlinSpace.Development.csproj -o . --no-build
       
     - name: Publish
-      run: dotnet nuget push AlinSpace.Development.*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push AlinSpace.Development.*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate

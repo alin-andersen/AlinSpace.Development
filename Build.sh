@@ -1,2 +1,2 @@
 #!/bin/bash
-atd build -p AlinSpace.Development
+AlinSpace.Development.Console build -i true
